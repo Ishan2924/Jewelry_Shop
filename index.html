@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Jewelry Store</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Collections</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Elegant and Timeless Jewelry</h1>
+        <button>Shop Now</button>
+    </section>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Gemstone Guide</h2>
+            <ul>
+                <li><a href="amethyst.html">Amethyst</a></li>
+                <li><a href="aquamarine.html">Aquamarine</a></li>
+                <li><a href="citrine.html">Citrine</a></li>
+                <li><a href="diamond.html">Diamond</a></li>
+                <li><a href="emerald.html">Emerald</a></li>
+                <li><a href="garnet.html">Garnet</a></li>
+                <li><a href="jade.html">Jade</a></li>
+                <li><a href="lapis_lazuli.html">Lapis Lazuli</a></li>
+                <li><a href="moonstone.html">Moonstone</a></li>
+                <li><a href="opal.html">Opal</a></li>
+                <li><a href="onyx.html">Onyx</a></li>
+                <li><a href="peridot.html">Peridot</a></li>
+                <li><a href="ruby.html">Ruby</a></li>
+                <li><a href="sapphire.html">Sapphire</a></li>
+                <li><a href="spinel.html">Spinel</a></li>
+                <li><a href="tanzanite.html">Tanzanite</a></li>
+                <li><a href="topaz.html">Topaz</a></li>
+                <li><a href="tourmaline.html">Tourmaline</a></li>
+                <li><a href="turquoise.html">Turquoise</a></li>
+                <li><a href="zircon.html">Zircon</a></li>
+            </ul>
+        </aside>
+
+    <!-- Gemstone Products -->
+    <section class="product-grid">
+        <div class="search-bar-container">
+            <h2>Our Gemstones</h2>
+            <input type="text" id="searchBar" placeholder="Search for gemstones...">
+        </div>
+        <div class="grid-container" id="gemstoneList">
+            <div class="gemstone" data-tooltip="Amethyst: Known for promoting calm and healing.">
+                <a href="amethyst.html">
+                <img src="amethyst.jpg" alt="Amethyst">
+                <p>Amethyst</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Aquamarine: Symbol of tranquility and courage.">
+                <a href="aquamarine.html">
+                <img src="aquamarine.jpg" alt="Aquamarine">
+                <p>Aquamarine</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Citrine: Represents prosperity and success.">
+                <a href="citrine.html">
+                <img src="citrine.jpg" alt="Citrine">
+                <p>Citrine</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Diamond: Symbolizing purity and strength.">
+                <a href="diamond.html">
+                <img src="diamond.jpg" alt="Diamond">
+                <p>Diamond</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Emerald: Represents rebirth and love.">
+                <a href="emerald.html">
+                <img src="emerald.jpeg" alt="Emerald">
+                <p>Emerald</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Garnet: Symbolizes love and friendship.">
+                <a href="garnet.html">
+                <img src="garnet.jpeg" alt="Garnet">
+                <p>Garnet</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Opal: Represents hope, purity, and truth.">
+                <a href="opal.html">
+                <img src="opal.jpeg" alt="Opal">
+                <p>Opal</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Peridot: Associated with strength and harmony.">
+                <a href="peridot.html">
+                <img src="peridot.jpeg" alt="Peridot">
+                <p>Peridot</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Ruby: Passion and protection, vibrant red color.">
+                <a href="ruby.html">
+                <img src="ruby.jpeg" alt="Ruby">
+                <p>Ruby</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Sapphire: Wisdom and royalty, known for deep blue color.">
+                <a href="sapphire.html">
+                <img src="saphire.jpeg" alt="Sapphire">
+                <p>Sapphire</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Topaz: Represents affection and love.">
+                <a href="topaz.html">
+                <img src="topaz.jpeg" alt="Topaz">
+                <p>Topaz</p>
+                </a>
+            </div>
+            <div class="gemstone" data-tooltip="Turquoise: Symbolizes protection and good fortune.">
+                <a href="turquoise.html">
+                <img src="turqoise.jpeg" alt="Turquoise">
+                <p>Turquoise</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jewelry Store. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <div id="tooltip"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

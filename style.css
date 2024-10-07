@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #e67e22;
+}
+
+.hero {
+    background: url('hero-image.jpeg') no-repeat center center/cover;
+    height: 400px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #d35400;
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    padding: 20px;
+}
+
+.sidebar {
+    background: linear-gradient(135deg, #f3f3f3, #f9f9f9); /* Light gradient background */
+    padding: 20px; /* Ensure enough space inside the sidebar */
+    width: 250px; /* Adjust sidebar width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Add space around the sidebar */
+}
+
+
+.sidebar h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e67e22; /* A stylish divider */
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Make the titles stand out */
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    display: block;
+    background-color: hsl(0, 6%, 80%);
+    color: rgb(16, 10, 10);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #3991ac;
+    padding: 10px 0;
+    display: block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #e67e22; /* Highlight the link on hover */
+    color: white;
+    border-radius: 5px; /* Smooth corner effect */
+    padding-left: 10px; /* Add subtle movement */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Make sidebar full-width on smaller screens */
+        padding: 10px;
+        margin: 0;
+    }
+
+    .sidebar ul {
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px; /* Adjust the width if needed */
+}
+
+.product-grid {
+    flex-grow: 1; /* Allow product grid to take remaining space */
+    padding: 20px;
+}
+
+.product-grid h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gemstone {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 320px;  /* Adjusted height to maintain alignment */
+    margin: 20px 0;
+}
+
+
+.gemstone img {
+    width: 100%;
+    height: 180px;  /* Set fixed height for uniformity */
+    max-width: 220px; /* Set a consistent width */
+    max-height: 200px;
+    object-fit: cover;  /* Ensures images fit within the dimensions */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.gemstone p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    font-style: oblique ;
+    font-weight: bold;
+    
+}
+
+.gemstone:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gemstone-detail {
+    padding: 20px; /* Space around the content */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Border for separation */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px; /* Margin around the section */
+    max-width: 800px; /* Maximum width for the detail section */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+    align-items: center;
+    text-align: left; /* Align text to the left */
+}
+
+.gemstone-detail img {
+    width: 100%;
+    height: 200px;  /* Set fixed height for uniformity */ /* Set a consistent width */
+    max-height: 200px;
+    object-fit:contain;  /* Ensures images fit within the dimensions */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.gemstone-detail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gemstone-detail h2 {
+    margin-top: 20px; /* Space above headings */
+    color: #333; /* Darker color for headings */
+}
+
+.gemstone-detail p {
+    line-height: 1.6; /* Improved readability */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+#tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    z-index: 1000;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+.about h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.about p, .about ul {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+.about ul li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
